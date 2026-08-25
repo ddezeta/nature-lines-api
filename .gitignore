@@ -141,3 +141,15 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# tsoa generated files
+src/routes.ts
+public/swagger.json
+
+#ai
+/CLAUDE.md
+/GEMENI.md
+/AGENTS.md
+
+#self-docs
+project_summary.md

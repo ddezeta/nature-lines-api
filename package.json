@@ -1,0 +1,33 @@
+{
+  "name": "nature-lines-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Nature Lines API for interacting with 3rd party data providers.",
+  "main": "dist/server.js",
+  "scripts": {
+    "predev": "tsoa spec-and-routes",
+    "dev": "tsx watch src/server.ts",
+    "prebuild": "tsoa spec-and-routes",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "swagger-ui-express": "^5.0.1",
+    "tsoa": "^6.4.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.10.2",
+    "@types/swagger-ui-express": "^4.1.6",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.12",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
